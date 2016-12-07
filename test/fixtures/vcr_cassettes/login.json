@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODExOTk3NzgsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxMTEzMzc4fQ.gPjBL_7iS234WA-9vx_p4BXJiL3tHOzoK7G4S4oPfnK7RvkJ6sFceslpr1cX0kROZWQchjnGcl7w4WcX1Oo6nVUmlJt9aL2MyLh9C3k9f9xInGsncyFAABeWoi_5FpI7XPs25YKv3PbbQEZhiPIJK9luAQD2V_tfcEOUwS3GtjP_WMxMRpv1hroSXzrGx5AU8uZo-OcepR9Gh3_JmcdlKwRvIQu094W0FxendWF5-2OAgJWUdvw8mleswiS23y_H9XStvXnvmmVArfCAOOoseAj-ckh2-leuVR4S0bf5n8n2jjJdKSoa6TonzxeAwcTWPMtNuIAhponudMb3St01lA\"\n}",
+      "headers": {
+        "Date": "Wed, 07 Dec 2016 12:22:58 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d4263924d389d79442b0cf1435e99cd1d1481113377; expires=Thu, 07-Dec-17 12:22:57 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "30d7f2307ea427da-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
