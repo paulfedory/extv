@@ -30,7 +30,16 @@ defmodule ExTV.Mixfile do
   defp deps do
     [
        {:httpoison, "~> 0.10"},
-       {:poison, "~> 3.0"}
+       {:poison, "~> 3.0"},
+       {:exvcr, "~> 0.8.4", only: :test}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Paul Fedory"],
+      licenses: ["MIT"],
+      links: %{ "Github" => "https://github.com/paulfedory/extv" }
     ]
   end
 end

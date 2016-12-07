@@ -19,5 +19,5 @@ erl_crash.dump
 # VIM swap files
 *.swp
 
-# config file
-/config/config.exs
+# config files
+/config
