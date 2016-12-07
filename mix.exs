@@ -14,7 +14,7 @@ defmodule ExTV.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison],
+    [applications: [:logger, :httpoison, :poison],
      mod: {ExTV, []}]
   end
 
@@ -29,7 +29,8 @@ defmodule ExTV.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-       {:httpoison, "~> 0.10.0"}
+       {:httpoison, "~> 0.10"},
+       {:poison, "~> 3.0"}
     ]
   end
 end
