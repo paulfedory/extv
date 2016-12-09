@@ -11,18 +11,18 @@
       "url": "https://api.thetvdb.com/login"
     },
     "response": {
-      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODEzNDM5OTcsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxMjU3NTk3fQ.ObzvzsDsu5jpkPqdO-tJ32bL0MzjYUhH1eaBvHAfma0bS6gEYhft0m6Tb2JXf4pkskzK6XQds5Nl5tgLaR93VxlQ_U7yD68W1xJysspEv1Z6zbF-hSnx2dCXtUriWUKGovCeDJuJgTIel7wMf4avAK8G0cgKS6hMPG_1vL2r-SZ5idwoeVd2Gq27IaES7mz2X7UQwnXa8wzJStU9iaRcf666xgaHTheknmdaRdQtrvDmoy77LApDHeUjwW7pDJahAYrBEQexrpSJvlva5073Kjlpdd2DRrnysEPG1VGALrmk79Ikc47sfu3wJ5wI2jXg6lmHocadF8FGthP7QL4D3w\"\n}",
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODEzNDc5NjgsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxMjYxNTY4fQ.EqXZGgUCKPqnWkyaRo-wQG3X0qn-ir2e0CdZWtckU6f0tVoD_YLa1kQw_-wNSSoAZZW_0f8RZ7Lf14xSq-jOzVP9GYA3MknIhmFr9BTDiYcs8HTiRm8xRgn1zqJugbiQHWEqIF2N6AuL_H_eWNsIvyWQ3uGfpUl80PVsOoqfK18kxiKsCO724_8kyZChViMPf51YlZtln9SsUIzWVuOXYjyESpmgfq2_vLMGGdgzI2fUKDwIFZ1MIGfdEtjzebaRuhMNdXVECKTTm3XBXasjC2VUkLQODoQC6q7__tTP1y4mvfTIb_zaPcj7a2DzBDU81aPQNSjR14qz1GDj1LF6dQ\"\n}",
       "headers": {
-        "Date": "Fri, 09 Dec 2016 04:26:37 GMT",
+        "Date": "Fri, 09 Dec 2016 05:32:48 GMT",
         "Content-Type": "application/json; charset=utf-8",
         "Content-Length": "467",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=d4b2200e79ae5b57bea6994f801e085271481257597; expires=Sat, 09-Dec-17 04:26:37 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Set-Cookie": "__cfduid=d052021527f31cafb70f3d008a8a512161481261568; expires=Sat, 09-Dec-17 05:32:48 GMT; path=/; domain=.thetvdb.com; HttpOnly",
         "Vary": "Accept-Language",
         "X-Powered-By": "Thundar!",
         "X-Thetvdb-Api-Version": "2.1.2",
         "Server": "cloudflare-nginx",
-        "CF-RAY": "30e5b32f4f75303c-YYZ"
+        "CF-RAY": "30e614257f0927ec-YYZ"
       },
       "status_code": 200,
       "type": "ok"
@@ -34,7 +34,7 @@
       "headers": {
         "content-type": "application/json",
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODEzNDM5OTcsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxMjU3NTk3fQ.ObzvzsDsu5jpkPqdO-tJ32bL0MzjYUhH1eaBvHAfma0bS6gEYhft0m6Tb2JXf4pkskzK6XQds5Nl5tgLaR93VxlQ_U7yD68W1xJysspEv1Z6zbF-hSnx2dCXtUriWUKGovCeDJuJgTIel7wMf4avAK8G0cgKS6hMPG_1vL2r-SZ5idwoeVd2Gq27IaES7mz2X7UQwnXa8wzJStU9iaRcf666xgaHTheknmdaRdQtrvDmoy77LApDHeUjwW7pDJahAYrBEQexrpSJvlva5073Kjlpdd2DRrnysEPG1VGALrmk79Ikc47sfu3wJ5wI2jXg6lmHocadF8FGthP7QL4D3w"
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODEzNDc5NjgsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxMjYxNTY4fQ.EqXZGgUCKPqnWkyaRo-wQG3X0qn-ir2e0CdZWtckU6f0tVoD_YLa1kQw_-wNSSoAZZW_0f8RZ7Lf14xSq-jOzVP9GYA3MknIhmFr9BTDiYcs8HTiRm8xRgn1zqJugbiQHWEqIF2N6AuL_H_eWNsIvyWQ3uGfpUl80PVsOoqfK18kxiKsCO724_8kyZChViMPf51YlZtln9SsUIzWVuOXYjyESpmgfq2_vLMGGdgzI2fUKDwIFZ1MIGfdEtjzebaRuhMNdXVECKTTm3XBXasjC2VUkLQODoQC6q7__tTP1y4mvfTIb_zaPcj7a2DzBDU81aPQNSjR14qz1GDj1LF6dQ"
       },
       "method": "get",
       "options": [],
@@ -44,18 +44,18 @@
     "response": {
       "body": "{\n  \"data\": {\n    \"id\": 77400,\n    \"seriesName\": \"The Girl from Tomorrow\",\n    \"aliases\": [],\n    \"banner\": \"graphical/77400-g.jpg\",\n    \"seriesId\": \"6108\",\n    \"status\": \"Ended\",\n    \"firstAired\": \"1992-01-05\",\n    \"network\": \"Nine Network\",\n    \"networkId\": \"\",\n    \"runtime\": \"30\",\n    \"genre\": [\n      \"Action\",\n      \"Adventure\",\n      \"Family\",\n      \"Science-Fiction\"\n    ],\n    \"overview\": \"TGFT (Part 1):\\r\\nAlana, a teenaged girl from the year 3000, finds herself trapped in 1990 with Silverthorn, a criminal from the year 2500. Alone and confused, she befriends a spirited girl named Jenny Kelly. Together they attempt to track down the time capsule which brought her there.\\r\\n\\r\\nTOMORROW'S END\\r\\n(AKA \\\"TGFT Part 2\\\"/Season 2):\\r\\n\\r\\nRealizing that they have polluted the time stream with their experiments, the scientists from the year 3000 resolve to return Jenny and Silverthorn to their respective times. Troubles in the year 2500, however, lead to Alana and her guardian, Lorien, returning to a devastated future.\\r\\n\",\n    \"lastUpdated\": 1447284749,\n    \"airsDayOfWeek\": \"Daily\",\n    \"airsTime\": \"4:30pm\",\n    \"rating\": \"TV-G\",\n    \"imdbId\": \"tt0098803\",\n    \"zap2itId\": \"\",\n    \"added\": \"\",\n    \"addedBy\": null,\n    \"siteRating\": 8.4,\n    \"siteRatingCount\": 7\n  }\n}",
       "headers": {
-        "Date": "Fri, 09 Dec 2016 04:26:37 GMT",
+        "Date": "Fri, 09 Dec 2016 05:32:49 GMT",
         "Content-Type": "application/json; charset=utf-8",
         "Content-Length": "1288",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=d4b2200e79ae5b57bea6994f801e085271481257597; expires=Sat, 09-Dec-17 04:26:37 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Set-Cookie": "__cfduid=d838ae84c61996d21e7201848bcf2eadb1481261569; expires=Sat, 09-Dec-17 05:32:49 GMT; path=/; domain=.thetvdb.com; HttpOnly",
         "Cache-Control": "private, max-age=600",
         "Last-Modified": "Wed, 11 Nov 2015 23:32:29 GMT",
         "Vary": "Accept-Language",
         "X-Powered-By": "Thundar!",
         "X-Thetvdb-Api-Version": "2.1.2",
         "Server": "cloudflare-nginx",
-        "CF-RAY": "30e5b3321863303c-YYZ"
+        "CF-RAY": "30e614266f2f27ec-YYZ"
       },
       "status_code": 200,
       "type": "ok"

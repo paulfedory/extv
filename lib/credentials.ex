@@ -2,7 +2,7 @@ defmodule ExTV.Credentials do
   @doc """
   Creates the bucket to hold a TVDB user's credentials as key value pairs
   """
-  def start_link  do
+  def start_link do
     Agent.start_link(fn -> %{} end, name: :credentials)
   end
 
@@ -20,4 +20,10 @@ defmodule ExTV.Credentials do
     Agent.update(:credentials, &Map.put(&1,key,value))
   end
 
+  @doc """
+  Resets the state of the agent, starting with a new Map
+  """
+  def reset do
+    Agent.cast(:credentials, fn(_) -> %{} end)
+  end
 end

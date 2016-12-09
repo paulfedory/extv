@@ -4,6 +4,10 @@ defmodule ExTV.SeriesTest do
 
   doctest ExTV.Series
 
+  setup do
+    ExTV.Credentials.reset
+  end
+
   test "by_id/1 success" do
     use_cassette "by_id_success" do
      result = ExTV.Series.by_id("77400")

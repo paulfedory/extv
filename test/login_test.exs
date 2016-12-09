@@ -4,6 +4,10 @@ defmodule ExTV.LoginTest do
 
   doctest ExTV.Login
 
+  setup do
+    ExTV.Credentials.reset
+  end
+
   test "get_token/1" do
     use_cassette "login" do
      result = ExTV.Login.get_token
