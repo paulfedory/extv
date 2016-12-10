@@ -34,6 +34,7 @@ defmodule ExTV do
   end
 
   def api_key do
-    Application.get_env(:extv, :tvdb_api_key)
+    Application.get_env(:extv, :tvdb_api_key) ||
+      System.get_env("TVDB_API_KEY")
   end
 end
