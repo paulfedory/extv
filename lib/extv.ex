@@ -32,4 +32,8 @@ defmodule ExTV do
       {"Authorization", "Bearer #{ExTV.Login.get_token}"}
     ]
   end
+
+  def api_key do
+    Application.get_env(:extv, :tvdb_api_key)
+  end
 end

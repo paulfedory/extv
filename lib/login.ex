@@ -20,7 +20,7 @@ defmodule ExTV.Login do
   end
 
   defp login_request_body do
-    {:ok, body} = Poison.encode( %{apikey: Application.get_env(:extv, :tvdb_api_key)} )
+    {:ok, body} = Poison.encode( %{apikey: ExTV.api_key} )
     body
   end
 end
