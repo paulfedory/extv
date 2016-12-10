@@ -12,7 +12,7 @@ defmodule ExTV.SeriesTest do
     use_cassette "by_id_success" do
      result = ExTV.Series.by_id("77400")
 
-     assert result.body["data"]["seriesName"] == "The Girl from Tomorrow"
+     assert result["data"]["seriesName"] == "The Girl from Tomorrow"
     end
   end
 
@@ -20,7 +20,7 @@ defmodule ExTV.SeriesTest do
     use_cassette "by_id_failure" do
       result = ExTV.Series.by_id("blahblahblah")
 
-      assert result.body["Error"] == "ID: blahblahblah not found"
+      assert result["Error"] == "ID: blahblahblah not found"
     end
   end
 end
