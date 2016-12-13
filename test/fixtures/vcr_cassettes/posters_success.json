@@ -1,0 +1,63 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE2OTU3ODIsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjA5MzgyfQ.IdICOpF4Ij2VLMXqiYuTe7kueyT39rv1VMXoEK0-dwLiiDujJtlpZy3Vj-Tp5GevZVGroLUwg5g3_T6TpYfWJOq0Hya1S3Np09e0LtOHtNkA7VKbFD7Tsgeb6-JT2WsolWPAplHjairKHiTqLvOztUNmPRzJY6IKJLypWKXdOE317LtXU6PUyOnHovtLXjNZU-mOdthqE6BAOC1hUOwyoM-m0ZtRQnVYQ7CSfz-q9-UX5SldYYHEsmDty51JuY75cwzW7Rr7xU_o1CiDCMHfg4GBux7RDAiIyeo92jMySft1VxveeplvNoqbX-rR7HvBvLG5dqeXv_3wsY3dkHaepw\"\n}",
+      "headers": {
+        "Date": "Tue, 13 Dec 2016 06:09:42 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9f4298213339b491ea14228f4ed802351481609380; expires=Wed, 13-Dec-17 06:09:40 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "31073fa46aac302a-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE2OTU3ODIsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjA5MzgyfQ.IdICOpF4Ij2VLMXqiYuTe7kueyT39rv1VMXoEK0-dwLiiDujJtlpZy3Vj-Tp5GevZVGroLUwg5g3_T6TpYfWJOq0Hya1S3Np09e0LtOHtNkA7VKbFD7Tsgeb6-JT2WsolWPAplHjairKHiTqLvOztUNmPRzJY6IKJLypWKXdOE317LtXU6PUyOnHovtLXjNZU-mOdthqE6BAOC1hUOwyoM-m0ZtRQnVYQ7CSfz-q9-UX5SldYYHEsmDty51JuY75cwzW7Rr7xU_o1CiDCMHfg4GBux7RDAiIyeo92jMySft1VxveeplvNoqbX-rR7HvBvLG5dqeXv_3wsY3dkHaepw"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/296762/images/query?keyType=poster"
+    },
+    "response": {
+      "body": "{\n  \"data\": [\n    {\n      \"id\": 1090461,\n      \"keyType\": \"poster\",\n      \"subKey\": \"\",\n      \"fileName\": \"posters/296762-1.jpg\",\n      \"resolution\": \"680x1000\",\n      \"ratingsInfo\": {\n        \"average\": 4.3,\n        \"count\": 20\n      },\n      \"thumbnail\": \"_cache/posters/296762-1.jpg\"\n    },\n    {\n      \"id\": 1126317,\n      \"keyType\": \"poster\",\n      \"subKey\": \"\",\n      \"fileName\": \"posters/296762-2.jpg\",\n      \"resolution\": \"680x1000\",\n      \"ratingsInfo\": {\n        \"average\": 6.1,\n        \"count\": 33\n      },\n      \"thumbnail\": \"_cache/posters/296762-2.jpg\"\n    },\n    {\n      \"id\": 1156308,\n      \"keyType\": \"poster\",\n      \"subKey\": \"\",\n      \"fileName\": \"posters/296762-3.jpg\",\n      \"resolution\": \"680x1000\",\n      \"ratingsInfo\": {\n        \"average\": 6.7,\n        \"count\": 46\n      },\n      \"thumbnail\": \"_cache/posters/296762-3.jpg\"\n    },\n    {\n      \"id\": 1160977,\n      \"keyType\": \"poster\",\n      \"subKey\": \"\",\n      \"fileName\": \"posters/296762-4.jpg\",\n      \"resolution\": \"680x1000\",\n      \"ratingsInfo\": {\n        \"average\": 5.6,\n        \"count\": 18\n      },\n      \"thumbnail\": \"_cache/posters/296762-4.jpg\"\n    },\n    {\n      \"id\": 1164055,\n      \"keyType\": \"poster\",\n      \"subKey\": \"\",\n      \"fileName\": \"posters/296762-5.jpg\",\n      \"resolution\": \"680x1000\",\n      \"ratingsInfo\": {\n        \"average\": 5.6,\n        \"count\": 13\n      },\n      \"thumbnail\": \"_cache/posters/296762-5.jpg\"\n    },\n    {\n      \"id\": 1164051,\n      \"keyType\": \"poster\",\n      \"subKey\": \"\",\n      \"fileName\": \"posters/296762-6.jpg\",\n      \"resolution\": \"680x1000\",\n      \"ratingsInfo\": {\n        \"average\": 4.3,\n        \"count\": 8\n      },\n      \"thumbnail\": \"_cache/posters/296762-6.jpg\"\n    }\n  ]\n}",
+      "headers": {
+        "Date": "Tue, 13 Dec 2016 06:09:42 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "1697",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d194b457e884d932ded1de29a38e596441481609382; expires=Wed, 13-Dec-17 06:09:42 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "31073faf1d6c302a-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

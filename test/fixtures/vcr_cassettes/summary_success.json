@@ -1,0 +1,63 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE2OTI0ODEsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjA2MDgxfQ.QbVlVHQn3oB2SBJjtz5B_W9SyZmOK2QeP4ZrOpsQ1MmJo7KrInoqzJjFEmd3tqH--nJGf8F5Bi6aD5i6lekX4FdMbjtPutIxBAPxivEnfd4zji1R_GxJoUJ_ZcXh3CiM3jtHXtRJMZXEblNzQt6EDXA7GcgSSApRzi4FCc4W2JCsgpLUEz9AJzrJpAhHJ6JfWWol588Lpxv8POZBEsyjo1i2rNauXZeoMdliScl8E2sjLKS92V_j166joT19ExKYEvP0MwMJtUlbGgVlsY9c7tAGffI6F-am1Pf9GpbXMZwGrW7PuthxlGomvbBDVpBez6HjV0GMa8HYETyNp09DoQ\"\n}",
+      "headers": {
+        "Date": "Tue, 13 Dec 2016 05:14:41 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=dbe009e141771da12716bbeb1fe09e2ca1481606080; expires=Wed, 13-Dec-17 05:14:40 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "3106ef143ddd27da-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE2OTI0ODEsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjA2MDgxfQ.QbVlVHQn3oB2SBJjtz5B_W9SyZmOK2QeP4ZrOpsQ1MmJo7KrInoqzJjFEmd3tqH--nJGf8F5Bi6aD5i6lekX4FdMbjtPutIxBAPxivEnfd4zji1R_GxJoUJ_ZcXh3CiM3jtHXtRJMZXEblNzQt6EDXA7GcgSSApRzi4FCc4W2JCsgpLUEz9AJzrJpAhHJ6JfWWol588Lpxv8POZBEsyjo1i2rNauXZeoMdliScl8E2sjLKS92V_j166joT19ExKYEvP0MwMJtUlbGgVlsY9c7tAGffI6F-am1Pf9GpbXMZwGrW7PuthxlGomvbBDVpBez6HjV0GMa8HYETyNp09DoQ"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/296762/images"
+    },
+    "response": {
+      "body": "{\n  \"data\": {\n    \"fanart\": 6,\n    \"poster\": 6,\n    \"season\": 4,\n    \"seasonwide\": 2,\n    \"series\": 9\n  }\n}",
+      "headers": {
+        "Date": "Tue, 13 Dec 2016 05:14:41 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "107",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d53251c4e4a6523a92795928b2d5f6dc91481606081; expires=Wed, 13-Dec-17 05:14:41 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "3106ef16ee7127da-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

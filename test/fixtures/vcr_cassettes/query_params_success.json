@@ -1,0 +1,63 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE2OTQyNDEsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjA3ODQxfQ.l8rRxIGQf3tQ3YmdFd6xqNvNOJXOp1ZS40-8TCz4vBhJDKWu6n-iM80_a_TQerUcgKB06h05OTNFsxt82a52lW1F8jNrIhl_Hjgwmk7RdxIW6Z6xOoMg4rTSdD-KvKh4YINr44yPt-qyGJgdAx_aoiskoGd5CHIyYc7XXS11L-7Rs2mc8ITOQwx6bDW_BKTHk6VLGqPXHXbjjkMTrjQ0qQ7EUKMc0l9p-ZLtADnk9xprGb3kOlHoXSIHFWnyW7Lv93rddrBbFQ8DLjH9nBU2kqyaVrvC11aHyvKJZO44awDbSTlddDkeygZdoLyd0nPVAppeAnkXK6DH_p-JRw5S8A\"\n}",
+      "headers": {
+        "Date": "Tue, 13 Dec 2016 05:44:02 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d0ba4a866d56cb9bf7b8ce7960be370f31481607841; expires=Wed, 13-Dec-17 05:44:01 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "31071a123e533036-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE2OTQyNDEsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjA3ODQxfQ.l8rRxIGQf3tQ3YmdFd6xqNvNOJXOp1ZS40-8TCz4vBhJDKWu6n-iM80_a_TQerUcgKB06h05OTNFsxt82a52lW1F8jNrIhl_Hjgwmk7RdxIW6Z6xOoMg4rTSdD-KvKh4YINr44yPt-qyGJgdAx_aoiskoGd5CHIyYc7XXS11L-7Rs2mc8ITOQwx6bDW_BKTHk6VLGqPXHXbjjkMTrjQ0qQ7EUKMc0l9p-ZLtADnk9xprGb3kOlHoXSIHFWnyW7Lv93rddrBbFQ8DLjH9nBU2kqyaVrvC11aHyvKJZO44awDbSTlddDkeygZdoLyd0nPVAppeAnkXK6DH_p-JRw5S8A"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/296762/images/query/params"
+    },
+    "response": {
+      "body": "{\n  \"data\": [\n    {\n      \"keyType\": \"fanart\",\n      \"resolution\": [\n        \"1920x1080\"\n      ],\n      \"subKey\": [\n        \"graphical\",\n        \"text\"\n      ]\n    },\n    {\n      \"keyType\": \"poster\",\n      \"resolution\": [\n        \"680x1000\"\n      ],\n      \"subKey\": []\n    },\n    {\n      \"keyType\": \"season\",\n      \"resolution\": [],\n      \"subKey\": [\n        \"1\",\n        \"0\"\n      ]\n    },\n    {\n      \"keyType\": \"seasonwide\",\n      \"resolution\": [],\n      \"subKey\": [\n        \"0\",\n        \"1\"\n      ]\n    },\n    {\n      \"keyType\": \"series\",\n      \"resolution\": [],\n      \"subKey\": [\n        \"graphical\"\n      ]\n    }\n  ]\n}",
+      "headers": {
+        "Date": "Tue, 13 Dec 2016 05:44:02 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "624",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=da939b6bc1cc630ed7253abae92cfe5371481607842; expires=Wed, 13-Dec-17 05:44:02 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "31071a14dee93036-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
