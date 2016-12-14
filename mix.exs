@@ -7,6 +7,8 @@ defmodule ExTV.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: "An Elixir API client for theTVDB.com",
+     package: package(),
      deps: deps()]
   end
 
@@ -31,6 +33,7 @@ defmodule ExTV.Mixfile do
     [
        {:httpoison, "~> 0.10"},
        {:poison, "~> 3.0"},
+       {:ex_doc, ">= 0.14.0", only: :dev},
        {:exvcr, "~> 0.8.4", only: :test}
     ]
   end
