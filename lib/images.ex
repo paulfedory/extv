@@ -16,9 +16,15 @@ defmodule ExTV.Images do
   def posters(id) do
     query(id, "poster")["data"]
     |> Enum.sort(&(&1["ratingsInfo"]["average"] > &2["ratingsInfo"]["average"]))
-    |> Enum.map(fn(x) ->
-      Map.put(x, "fileName", "http://thetvdb.com/banners/" <> x["fileName"])
-      |> Map.put("thumbnail", "http://thetvdb.com/banners/" <> x["thumbnail"])
-    end)
+    |> Enum.map(fn(x) -> update_map_with_full_url(x) end)
+  end
+
+  def prepend_tvdb_url(path) do
+    "http://thetvdb.com/banners/" <> path
+  end
+
+  def update_map_with_full_url(map) do
+    Map.put(map, "fileName", prepend_tvdb_url(map["fileName"]))
+    |> Map.put("thumbnail", prepend_tvdb_url(map["thumbnail"]))
   end
 end
