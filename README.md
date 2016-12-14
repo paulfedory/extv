@@ -1,4 +1,4 @@
-# extv [![Build Status](https://travis-ci.org/paulfedory/extv.svg?branch=master)](https://travis-ci.org/paulfedory/extv)
+# extv [![Build Status](https://travis-ci.org/paulfedory/extv.svg?branch=master)](https://travis-ci.org/paulfedory/extv) [![Hex.pm](https://img.shields.io/hexpm/v/extv.svg)](https://hex.pm/packages/extv)
 Elixir API client for the TVDB
 
 ## Configuration
