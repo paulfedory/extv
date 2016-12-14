@@ -14,7 +14,7 @@ defmodule ExTV.Credentials do
   end
 
   @doc """
-  Puts a new value / replaces an existing value at `key` with `value
+  Puts a new value / replaces an existing value at `key` with `value`
   """
   def put(key,value) do
     Agent.update(:credentials, &Map.put(&1,key,value))
