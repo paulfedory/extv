@@ -19,11 +19,17 @@ defmodule ExTV.Images do
     |> Enum.map(fn(x) -> update_map_with_full_url(x) end)
   end
 
-  def prepend_tvdb_url(path) do
+  def fanart(id) do
+    query(id, "fanart")["data"]
+    |> Enum.sort(&(&1["ratingsInfo"]["average"] > &2["ratingsInfo"]["average"]))
+    |> Enum.map(fn(x) -> update_map_with_full_url(x) end)
+  end
+
+  defp prepend_tvdb_url(path) do
     "http://thetvdb.com/banners/" <> path
   end
 
-  def update_map_with_full_url(map) do
+  defp update_map_with_full_url(map) do
     Map.put(map, "fileName", prepend_tvdb_url(map["fileName"]))
     |> Map.put("thumbnail", prepend_tvdb_url(map["thumbnail"]))
   end

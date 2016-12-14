@@ -64,4 +64,13 @@ defmodule ExTV.ImagesTest do
      assert List.first(result)["fileName"] == "http://thetvdb.com/banners/posters/296762-3.jpg"
     end
   end
+
+  test "fanart/1 successfully queries for posters, sorts & cleans the result" do
+    use_cassette "fanart_success" do
+     result = ExTV.Images.fanart("296762")
+
+     assert List.first(result)["keyType"] == "fanart"
+     assert List.first(result)["fileName"] == "http://thetvdb.com/banners/fanart/original/296762-7.jpg"
+    end
+  end
 end

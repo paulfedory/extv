@@ -1,0 +1,63 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE3ODQzNzUsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjk3OTc1fQ.0VHNHwAtbbEqo8E1_8obHScgXM6nz-XNlw3gHGqRG-Nbl0FmVdPm1jTfAuBgdHYpB01xaEjkBj6X9Vb10Xq7TUGoBR9UN_K02vMAkZyVUxuwVDCmkepMU-X5hz3PS7NOxIFLzcUcTxYqZ74bI7qTgNuj84CCVkV2jLBLssmpZtz0VYNtO_FhupgmIVxmWF-7CO_uAIZYfv2_138aoHk6qqHyn7RCMf0iLJbs5Zlr1j7PameiG4pewGY2Q92FQOgnpnz784CIzuz8LkzZceBVhhZcEXS5l11KiKsm7HFLBCvBpkaxVhTyOEElOiccSHmFIiU6lMyj5-SaWdG5-8cs1A\"\n}",
+      "headers": {
+        "Date": "Wed, 14 Dec 2016 06:46:15 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d4731b610807460eee10d7966f01956191481697975; expires=Thu, 14-Dec-17 06:46:15 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "310fb29aacef3060-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODE3ODQzNzUsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDgxNjk3OTc1fQ.0VHNHwAtbbEqo8E1_8obHScgXM6nz-XNlw3gHGqRG-Nbl0FmVdPm1jTfAuBgdHYpB01xaEjkBj6X9Vb10Xq7TUGoBR9UN_K02vMAkZyVUxuwVDCmkepMU-X5hz3PS7NOxIFLzcUcTxYqZ74bI7qTgNuj84CCVkV2jLBLssmpZtz0VYNtO_FhupgmIVxmWF-7CO_uAIZYfv2_138aoHk6qqHyn7RCMf0iLJbs5Zlr1j7PameiG4pewGY2Q92FQOgnpnz784CIzuz8LkzZceBVhhZcEXS5l11KiKsm7HFLBCvBpkaxVhTyOEElOiccSHmFIiU6lMyj5-SaWdG5-8cs1A"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/296762/images/query?keyType=fanart"
+    },
+    "response": {
+      "body": "{\n  \"data\": [\n    {\n      \"id\": 1114554,\n      \"keyType\": \"fanart\",\n      \"subKey\": \"text\",\n      \"fileName\": \"fanart/original/296762-3.jpg\",\n      \"resolution\": \"1920x1080\",\n      \"ratingsInfo\": {\n        \"average\": 4.1,\n        \"count\": 14\n      },\n      \"thumbnail\": \"_cache/fanart/original/296762-3.jpg\"\n    },\n    {\n      \"id\": 1151007,\n      \"keyType\": \"fanart\",\n      \"subKey\": \"graphical\",\n      \"fileName\": \"fanart/original/296762-4.jpg\",\n      \"resolution\": \"1920x1080\",\n      \"ratingsInfo\": {\n        \"average\": 1,\n        \"count\": 3\n      },\n      \"thumbnail\": \"_cache/fanart/original/296762-4.jpg\"\n    },\n    {\n      \"id\": 1151008,\n      \"keyType\": \"fanart\",\n      \"subKey\": \"graphical\",\n      \"fileName\": \"fanart/original/296762-5.jpg\",\n      \"resolution\": \"1920x1080\",\n      \"ratingsInfo\": {\n        \"average\": 1,\n        \"count\": 3\n      },\n      \"thumbnail\": \"_cache/fanart/original/296762-5.jpg\"\n    },\n    {\n      \"id\": 1151189,\n      \"keyType\": \"fanart\",\n      \"subKey\": \"text\",\n      \"fileName\": \"fanart/original/296762-6.jpg\",\n      \"resolution\": \"1920x1080\",\n      \"ratingsInfo\": {\n        \"average\": 3.8,\n        \"count\": 8\n      },\n      \"thumbnail\": \"_cache/fanart/original/296762-6.jpg\"\n    },\n    {\n      \"id\": 1157147,\n      \"keyType\": \"fanart\",\n      \"subKey\": \"graphical\",\n      \"fileName\": \"fanart/original/296762-7.jpg\",\n      \"resolution\": \"1920x1080\",\n      \"ratingsInfo\": {\n        \"average\": 6.7,\n        \"count\": 27\n      },\n      \"thumbnail\": \"_cache/fanart/original/296762-7.jpg\"\n    },\n    {\n      \"id\": 1165058,\n      \"keyType\": \"fanart\",\n      \"subKey\": \"graphical\",\n      \"fileName\": \"fanart/original/296762-8.jpg\",\n      \"resolution\": \"1920x1080\",\n      \"ratingsInfo\": {\n        \"average\": 6.3,\n        \"count\": 3\n      },\n      \"thumbnail\": \"_cache/fanart/original/296762-8.jpg\"\n    }\n  ]\n}",
+      "headers": {
+        "Date": "Wed, 14 Dec 2016 06:46:16 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "1836",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d4731b610807460eee10d7966f01956191481697975; expires=Thu, 14-Dec-17 06:46:15 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "310fb29d7d5b3060-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
