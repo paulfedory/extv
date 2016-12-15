@@ -1,5 +1,12 @@
 defmodule ExTV.Images do
-  import ExTV
+  @moduledoc """
+  Provides access to theTVDB.com series endpoint for images.
+  Fetches image metadata and their URLs for a single TV series.
+  For general information relating to a series, please see
+  `ExTV.Series`.
+  """
+
+ import ExTV
 
   def summary(id) do
     get!("series/#{id}/images").body

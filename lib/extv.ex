@@ -1,4 +1,16 @@
 defmodule ExTV do
+  @moduledoc """
+  An Elixir API client for theTVDB.com
+
+  All calls to theTVDB.com API require an API key; sign up and get one there.
+  To configure ExTV to use the API key, add the following to your application's
+  config.exs:
+
+      config :extv, tvdb_api_key: "<your api key>"
+
+  Please see `ExTV.Series` as a starting point for getting about TV series.
+  """
+
   use Application
   use HTTPoison.Base
   require Logger

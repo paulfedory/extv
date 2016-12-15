@@ -1,4 +1,6 @@
 defmodule ExTV.Credentials do
+  @moduledoc false
+
   @doc """
   Creates the bucket to hold a TVDB user's credentials as key value pairs
   """

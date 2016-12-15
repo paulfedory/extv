@@ -1,4 +1,5 @@
 defmodule ExTV.Login do
+  @moduledoc false
   @base_url "https://api.thetvdb.com/"
 
   def get_token do
