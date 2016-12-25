@@ -33,7 +33,7 @@ defmodule ExTV.Images do
   end
 
   defp prepend_tvdb_url(path) do
-    "http://thetvdb.com/banners/" <> path
+    "https://thetvdb.com/banners/" <> path
   end
 
   defp update_map_with_full_url(map) do

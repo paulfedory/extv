@@ -61,7 +61,7 @@ defmodule ExTV.ImagesTest do
      result = ExTV.Images.posters("296762")
 
      assert List.first(result)["keyType"] == "poster"
-     assert List.first(result)["fileName"] == "http://thetvdb.com/banners/posters/296762-3.jpg"
+     assert List.first(result)["fileName"] == "https://thetvdb.com/banners/posters/296762-3.jpg"
     end
   end
 
@@ -70,7 +70,7 @@ defmodule ExTV.ImagesTest do
      result = ExTV.Images.fanart("296762")
 
      assert List.first(result)["keyType"] == "fanart"
-     assert List.first(result)["fileName"] == "http://thetvdb.com/banners/fanart/original/296762-7.jpg"
+     assert List.first(result)["fileName"] == "https://thetvdb.com/banners/fanart/original/296762-7.jpg"
     end
   end
 end
