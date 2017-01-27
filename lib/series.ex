@@ -20,4 +20,18 @@ defmodule ExTV.Series do
   def by_id(id) do
     get!("series/#{id}").body
   end
+
+  @doc """
+  Fetches information about actors for a single TV series.
+
+  Returns a map containing the data, or an error message if the series
+  cannot be found. Raises an error if the underlying request fails.
+
+  ## Parameters
+
+    - id: the ID of the series on theTVDB.com
+  """
+  def actors(id) do
+    get!("series/#{id}/actors").body["data"]
+  end
 end

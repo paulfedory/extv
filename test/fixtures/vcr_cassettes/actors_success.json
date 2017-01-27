@@ -1,0 +1,63 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODU1ODU3OTgsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDg1NDk5Mzk4fQ.D7lxAb2QX9asa53BgYh1G-KAHaUiRlVPYVa5ocMJ9an8DSO39_nRtPRirv2gIC3vhuY_buVMxGTjUPZakTfNrD_C_M3W34GB_1tTohjMBJ3cm4DRO9pmxSjK4MW9MZvA4EvqC2-zco4i8OezPKsWfcgqdIWFunDfRxM8S-KvfDJV7SwbDpp9N9Dj1ur4F31yX_W66JxO8Yu2gcaRaYIneMjcsXs3A7iL6eTOfX_QEwbFC1lyv9GfB8FVif_AcMwCiyXZPFbRKhRVHiOhDiqJdF62Rg_rrTdxpgC3vOPFx6crJLu428WI5i5x-j_PgSuRPXkPGJ7s8s4-iQev5DIarQ\"\n}",
+      "headers": {
+        "Date": "Fri, 27 Jan 2017 06:43:18 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d7cb16a753481d063ddba81ee3791c0851485499398; expires=Sat, 27-Jan-18 06:43:18 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "327a3ac9aaac300c-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODU1ODU3OTgsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDg1NDk5Mzk4fQ.D7lxAb2QX9asa53BgYh1G-KAHaUiRlVPYVa5ocMJ9an8DSO39_nRtPRirv2gIC3vhuY_buVMxGTjUPZakTfNrD_C_M3W34GB_1tTohjMBJ3cm4DRO9pmxSjK4MW9MZvA4EvqC2-zco4i8OezPKsWfcgqdIWFunDfRxM8S-KvfDJV7SwbDpp9N9Dj1ur4F31yX_W66JxO8Yu2gcaRaYIneMjcsXs3A7iL6eTOfX_QEwbFC1lyv9GfB8FVif_AcMwCiyXZPFbRKhRVHiOhDiqJdF62Rg_rrTdxpgC3vOPFx6crJLu428WI5i5x-j_PgSuRPXkPGJ7s8s4-iQev5DIarQ"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/77400/actors"
+    },
+    "response": {
+      "body": "{\n  \"data\": [\n    {\n      \"id\": 55281,\n      \"seriesId\": 77400,\n      \"name\": \"John Howard\",\n      \"role\": \"Silverthorn\",\n      \"sortOrder\": 1,\n      \"image\": \"actors/55281.jpg\",\n      \"imageAuthor\": 373304,\n      \"imageAdded\": \"2013-02-15 02:04:55\",\n      \"lastUpdated\": \"2013-02-15 02:05:55\"\n    },\n    {\n      \"id\": 55282,\n      \"seriesId\": 77400,\n      \"name\": \"Melissa Marshall\",\n      \"role\": \"Jenny Kelly\",\n      \"sortOrder\": 3,\n      \"image\": \"\",\n      \"imageAuthor\": 0,\n      \"imageAdded\": \"0000-00-00 00:00:00\",\n      \"lastUpdated\": \"2013-02-15 02:06:56\"\n    },\n    {\n      \"id\": 55284,\n      \"seriesId\": 77400,\n      \"name\": \"Andrew Clarke\",\n      \"role\": \"James Rooney\",\n      \"sortOrder\": 3,\n      \"image\": \"actors/55284.jpg\",\n      \"imageAuthor\": 373304,\n      \"imageAdded\": \"2013-02-15 01:47:22\",\n      \"lastUpdated\": \"2013-02-15 02:06:23\"\n    },\n    {\n      \"id\": 55285,\n      \"seriesId\": 77400,\n      \"name\": \"Katharine Cullen\",\n      \"role\": \"Alana\",\n      \"sortOrder\": 0,\n      \"image\": \"actors/55285.jpg\",\n      \"imageAuthor\": 373304,\n      \"imageAdded\": \"2013-02-15 01:42:34\",\n      \"lastUpdated\": \"2013-02-15 01:42:34\"\n    },\n    {\n      \"id\": 55286,\n      \"seriesId\": 77400,\n      \"name\": \"Helen O'Connor\",\n      \"role\": \"Irene Kelly\",\n      \"sortOrder\": 2,\n      \"image\": \"actors/55286.jpg\",\n      \"imageAuthor\": 373304,\n      \"imageAdded\": \"2013-02-15 01:54:21\",\n      \"lastUpdated\": \"2013-02-15 02:06:09\"\n    },\n    {\n      \"id\": 55287,\n      \"seriesId\": 77400,\n      \"name\": \"Miles Buchanan\",\n      \"role\": \"Eddie\",\n      \"sortOrder\": 3,\n      \"image\": \"\",\n      \"imageAuthor\": null,\n      \"imageAdded\": \"\",\n      \"lastUpdated\": \"2013-02-18 09:43:40\"\n    },\n    {\n      \"id\": 55288,\n      \"seriesId\": 77400,\n      \"name\": \"James Findlay\",\n      \"role\": \"Petey Kelly\",\n      \"sortOrder\": 3,\n      \"image\": \"\",\n      \"imageAuthor\": 0,\n      \"imageAdded\": \"0000-00-00 00:00:00\",\n      \"lastUpdated\": \"2012-07-01 05:35:01\"\n    }\n  ]\n}",
+      "headers": {
+        "Date": "Fri, 27 Jan 2017 06:43:19 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "1957",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=dabf9317a26c3f1f0ca25c514286b12af1485499399; expires=Sat, 27-Jan-18 06:43:19 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "327a3acbdb1c300c-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

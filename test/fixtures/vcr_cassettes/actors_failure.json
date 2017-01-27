@@ -1,0 +1,63 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODU1ODY1MTAsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDg1NTAwMTEwfQ.tV6Qd1xH2xfPtvrt1rUXtH8ojnxU_jC0lb_B5nAFf-n5EcW00sXTXTlH1qymh1YFfLa1GqIyAHD-oU2szRUlLhV_RImwNGX2SKCvoEPdQnsg0rpckNSSnL4HybK0eDezcLQgYBsaWIHFYnl5qE7cNrkdwRlNFscN0SBO5PeMa4_XD9psEV2iRy0wzhFjsjpxYCkpmHkC_7A7_ZZ2zzVJL3pixI67o_pugqSm0VERL9rh303hDPUKzIMgmuTPE_YFe81mFTvJEXF1gINC_LQksj6DIXmyu7EMibuvAIeSQv57MYixY0vH3_H4UJ2pGXH6_Lyee_Ia7FNQ0aOyulHK1A\"\n}",
+      "headers": {
+        "Date": "Fri, 27 Jan 2017 06:55:10 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9346d67f49716ddafda29ea4db140c691485500110; expires=Sat, 27-Jan-18 06:55:10 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "327a4c284b0f27e6-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODU1ODY1MTAsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNDg1NTAwMTEwfQ.tV6Qd1xH2xfPtvrt1rUXtH8ojnxU_jC0lb_B5nAFf-n5EcW00sXTXTlH1qymh1YFfLa1GqIyAHD-oU2szRUlLhV_RImwNGX2SKCvoEPdQnsg0rpckNSSnL4HybK0eDezcLQgYBsaWIHFYnl5qE7cNrkdwRlNFscN0SBO5PeMa4_XD9psEV2iRy0wzhFjsjpxYCkpmHkC_7A7_ZZ2zzVJL3pixI67o_pugqSm0VERL9rh303hDPUKzIMgmuTPE_YFe81mFTvJEXF1gINC_LQksj6DIXmyu7EMibuvAIeSQv57MYixY0vH3_H4UJ2pGXH6_Lyee_Ia7FNQ0aOyulHK1A"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/blahblahblah/actors"
+    },
+    "response": {
+      "body": "{\n  \"data\": null\n}",
+      "headers": {
+        "Date": "Fri, 27 Jan 2017 06:55:10 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "18",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9346d67f49716ddafda29ea4db140c691485500110; expires=Sat, 27-Jan-18 06:55:10 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "327a4c2aab7c27e6-YYZ"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
