@@ -43,4 +43,40 @@ defmodule ExTV.SeriesTest do
       end
     end
   end
+
+  describe "episodes/1" do
+    test "successfully fetch a series' episodes by series ID" do
+      use_cassette "episodes_success" do
+        result = ExTV.Series.episodes(295685)
+
+        assert List.first(result)["episodeName"] == "Pilot"
+      end
+    end
+
+    test "returns nil when it fails to find that series by ID" do
+      use_cassette "episodes_failure" do
+        result = ExTV.Series.episodes(-1)
+
+        assert result == nil
+      end
+    end
+  end
+
+  describe "episodes_summary/1" do
+    test "successfully fetch a series' episodes summary by series ID" do
+      use_cassette "episodes_summary_success" do
+        result = ExTV.Series.episodes_summary(295685)
+
+        assert result["airedEpisodes"] == "44"
+      end
+    end
+
+    test "returns nil when it fails to find that series by ID" do
+      use_cassette "episodes_summary_failure" do
+        result = ExTV.Series.episodes_summary(-1)
+
+        assert result == nil
+      end
+    end
+  end
 end

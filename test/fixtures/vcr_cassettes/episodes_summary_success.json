@@ -1,0 +1,66 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 5000,
+        "connect_timeout": 8000
+      },
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDc2OTEwNjAsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNTA3NjA0NjYwfQ.S9vuDAHc0FCp3kXOcEDpAc9n-joFVPb9R3qfG3b2IQaxKtk0XM_7O_XAhYJy0OnuNw0jInj_xz5TQaT7XFntgDk3bhMAF3234SgLucOyZ4pWGRKQqvPXu3aYPnTB7Zd3tBo2oxXmlNJbyTLwIG6L0Np9SaRWbtr57uRr4rn3BXRtqf33nMUsT9_5NNcYb9hmQgtmjbUd-4bXlOZS618eYiM6nw7g12gFI2wU0RlCjifarY-BmZ2R9UIFn8LkmZ9EPVPiEc7Zei2OYRdUxsed2SGDzqtmuUvKfJnNan0m6k_oolsRMVqIAuw_TirZX7kWgnjjx-uH4V0lxpvj-S4x5Q\"\n}",
+      "headers": {
+        "Date": "Tue, 10 Oct 2017 03:04:20 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d890c2242c60310ec30659bb02238692c1507604660; expires=Wed, 10-Oct-18 03:04:20 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "3ab65a079a0579f3-SEA"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDc2OTEwNjAsImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNTA3NjA0NjYwfQ.S9vuDAHc0FCp3kXOcEDpAc9n-joFVPb9R3qfG3b2IQaxKtk0XM_7O_XAhYJy0OnuNw0jInj_xz5TQaT7XFntgDk3bhMAF3234SgLucOyZ4pWGRKQqvPXu3aYPnTB7Zd3tBo2oxXmlNJbyTLwIG6L0Np9SaRWbtr57uRr4rn3BXRtqf33nMUsT9_5NNcYb9hmQgtmjbUd-4bXlOZS618eYiM6nw7g12gFI2wU0RlCjifarY-BmZ2R9UIFn8LkmZ9EPVPiEc7Zei2OYRdUxsed2SGDzqtmuUvKfJnNan0m6k_oolsRMVqIAuw_TirZX7kWgnjjx-uH4V0lxpvj-S4x5Q"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/295685/episodes/summary"
+    },
+    "response": {
+      "body": "{\n  \"data\": {\n    \"airedSeasons\": [\n      \"3\",\n      \"2\",\n      \"0\",\n      \"1\"\n    ],\n    \"airedEpisodes\": \"44\",\n    \"dvdSeasons\": [\n      \"2\",\n      \"3\",\n      \"1\"\n    ],\n    \"dvdEpisodes\": \"34\"\n  }\n}",
+      "headers": {
+        "Date": "Tue, 10 Oct 2017 03:04:20 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "201",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d890c2242c60310ec30659bb02238692c1507604660; expires=Wed, 10-Oct-18 03:04:20 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "3ab65a07fa3479f3-SEA"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

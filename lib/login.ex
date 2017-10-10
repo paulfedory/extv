@@ -1,15 +1,16 @@
 defmodule ExTV.Login do
   @moduledoc false
-  @base_url "https://api.thetvdb.com/"
+
+  import ExTV.HTTP, only: [process_request_options: 1, process_url: 1]
 
   def get_token do
     login_request ExTV.Credentials.get(:token)
   end
 
   defp login_request(nil) do
-    @base_url <> "login"
-    |> HTTPoison.post(login_request_body, [{"content-type", "application/json"}])
-    |> login_response
+    process_url("login")
+    |> HTTPoison.post(login_request_body(), [{"content-type", "application/json"}], process_request_options([]))
+    |> login_response()
   end
   defp login_request(token), do: token
 

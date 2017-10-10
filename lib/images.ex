@@ -6,7 +6,7 @@ defmodule ExTV.Images do
   `ExTV.Series`.
   """
 
- import ExTV
+  import ExTV.HTTP
 
   def summary(id) do
     get!("series/#{id}/images").body

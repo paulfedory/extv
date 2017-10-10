@@ -1,0 +1,66 @@
+[
+  {
+    "request": {
+      "body": "{\"apikey\":\"429342F2A867E3F5\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 5000,
+        "connect_timeout": 8000
+      },
+      "request_body": "",
+      "url": "https://api.thetvdb.com/login"
+    },
+    "response": {
+      "body": "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDc2OTA5MjksImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNTA3NjA0NTI5fQ.ipFFnKLHV77JVicPG3BudRfJfpXssYkW48L77Cq3MTyrgNLIUa3e6XYTneXqVrPh32aK7bvO3TO5MHKPHINSTGVaOv45zevQNbOBeRkPj-ej2hmlKZqwFRTp5nEDsR2xb2PDhm-49ImSteQWG17R0AxK8M11qCtJ7jlBBKknbV-R5HKcCoMxgCvRqhVosR8FvDOci9nOGgN2Z58b9IDybyb-SnZDo2jgc52UvRfVpbvoVt0x6b4rlmiNd1MwVD6Tq96s5__I-uLrfBhqTTexxowfUf_EShvZa7ItGIoMXKI7V0lmllz9wfBJo8ouPakDa5SCRhsKDnw4LJW0VPLw9Q\"\n}",
+      "headers": {
+        "Date": "Tue, 10 Oct 2017 03:02:09 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "467",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=dad45dbaef07b0ad111bbc390d49366bb1507604529; expires=Wed, 10-Oct-18 03:02:09 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "3ab656d25f242a4f-SEA"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDc2OTA5MjksImlkIjoiRXh0diIsIm9yaWdfaWF0IjoxNTA3NjA0NTI5fQ.ipFFnKLHV77JVicPG3BudRfJfpXssYkW48L77Cq3MTyrgNLIUa3e6XYTneXqVrPh32aK7bvO3TO5MHKPHINSTGVaOv45zevQNbOBeRkPj-ej2hmlKZqwFRTp5nEDsR2xb2PDhm-49ImSteQWG17R0AxK8M11qCtJ7jlBBKknbV-R5HKcCoMxgCvRqhVosR8FvDOci9nOGgN2Z58b9IDybyb-SnZDo2jgc52UvRfVpbvoVt0x6b4rlmiNd1MwVD6Tq96s5__I-uLrfBhqTTexxowfUf_EShvZa7ItGIoMXKI7V0lmllz9wfBJo8ouPakDa5SCRhsKDnw4LJW0VPLw9Q"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.thetvdb.com/series/-1/episodes"
+    },
+    "response": {
+      "body": "{\n  \"Error\": \"No results for your query: map[tve.seriesId:-1]\"\n}",
+      "headers": {
+        "Date": "Tue, 10 Oct 2017 03:02:09 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "64",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=dad45dbaef07b0ad111bbc390d49366bb1507604529; expires=Wed, 10-Oct-18 03:02:09 GMT; path=/; domain=.thetvdb.com; HttpOnly",
+        "Cache-Control": "private, max-age=600",
+        "Vary": "Accept-Language",
+        "X-Powered-By": "Thundar!",
+        "X-Thetvdb-Api-Version": "2.1.2",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "3ab656d2cf632a4f-SEA"
+      },
+      "status_code": 404,
+      "type": "ok"
+    }
+  }
+]
