@@ -5,7 +5,7 @@ defmodule ExTV.Series do
   `ExTV.Images`.
   """
 
-  import ExTV
+  import ExTV.HTTP
 
   @doc """
   Fetches information about a single TV series.
@@ -24,14 +24,40 @@ defmodule ExTV.Series do
   @doc """
   Fetches information about actors for a single TV series.
 
-  Returns a map containing the data, or an error message if the series
+  Returns a map containing the data, or nil if the series
   cannot be found. Raises an error if the underlying request fails.
 
   ## Parameters
 
     - id: the ID of the series on theTVDB.com
   """
+  @spec actors(number) :: map() | nil
   def actors(id) do
     get!("series/#{id}/actors").body["data"]
+  end
+
+  @doc """
+  Fetches an array of episodes for the given series id
+
+  ## Parameters
+
+    - id: the ID of the series on theTVDB.com
+  """
+  @spec episodes(number) :: map() | nil
+  def episodes(id) do
+    get!("series/#{id}/episodes").body["data"]
+  end
+
+  @doc """
+  Fetches a summary of the episodes and seasons available for the given series
+
+
+  ## Parameters
+
+    - id: the ID of the series on theTVDB.com
+  """
+  @spec episodes_summary(number) :: map() | nil
+  def episodes_summary(id) do
+    get!("series/#{id}/episodes/summary").body["data"]
   end
 end
