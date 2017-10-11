@@ -33,6 +33,14 @@ defmodule ExTV.HTTP do
       ]
   end
 
+  def handle_response(response) do
+    case response do
+      nil                        -> {:error, :no_data}
+      %{status_code: 200} = resp -> {:ok, resp}
+      _                          -> {:error, :bad_response}
+    end
+  end
+
   defp timeout do
     Application.get_env(:extv, :http_timeout, @default_timeout)
   end
