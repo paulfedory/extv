@@ -43,15 +43,17 @@ defmodule ExTV.Series do
   ## Parameters
 
     - id: the ID of the series on theTVDB.com
+    - raise_on_error: Raise if there is an error
+    end
   """
-  @spec episodes(number) :: Enumerable.t
-  def episodes(id) do
+  @spec episodes(number, boolean) :: Enumerable.t
+  def episodes(id, raise_on_error \\ false) do
     fetch_page = fn page ->
       get!("series/#{id}/episodes?page=#{page}")
       |> handle_response()
     end
 
-    stream(fetch_page)
+    stream(fetch_page, &default_extract/1, &default_next_page/2, [raise: raise_on_error])
   end
 
   @doc """

@@ -37,7 +37,7 @@ defmodule ExTV.HTTP do
     case response do
       nil                        -> {:error, :no_data}
       %{status_code: 200} = resp -> {:ok, resp}
-      _                          -> {:error, :bad_response}
+      _                          -> {:error, :bad_response, response}
     end
   end
 

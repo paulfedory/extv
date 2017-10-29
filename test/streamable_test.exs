@@ -25,6 +25,31 @@ defmodule ExTV.StreamableTest do
 
       assert result == mock_data
     end
+
+    test "raises an error on soft errors when 'raise' opt is specified as true" do
+      mock_data = ["one", "two", "three"]
+
+      # Return an error
+      fetch_page = fn _page -> {:error, :no_data} end
+
+      # Just return the element
+      extract = fn resp -> {:ok, resp} end
+
+      # Next page is just page + 1 until the end of the list
+      next_page = fn page, _resp ->
+        next = cond do
+          page == length(mock_data) -> nil
+          true -> page + 1
+        end
+        {:ok, next}
+      end
+
+
+      assert_raise RuntimeError, fn ->
+        ExTV.Streamable.stream(fetch_page, extract, next_page, [raise: true])
+        |> Enum.into([])
+      end
+    end
   end
 
   describe "default_extract/1" do

@@ -1,4 +1,8 @@
 defmodule ExTV.Streamable do
+  @moduledoc """
+  A utility module for streaming API calls where pagination is supported
+  """
+
   @doc """
   Sets up a stream for a paginated API call based on 3 functions;
 
@@ -17,15 +21,20 @@ defmodule ExTV.Streamable do
       ...> &ExTV.Streamable.default_next_page/2
       ...> )
       #Function<50.40091930/2 in Stream.resource/3>
+
+
+  Available options:
+
+  - `:raise` - `boolean` - Set to true in order to raise an error if streaming results in a soft error like `{:error, :no_data}`
   """
-  @spec stream((integer -> map()), (map() -> map()), (integer, map() -> integer)) :: Enumerable.t
-  def stream(fetch_page, extract_data \\ &default_extract/1, calc_next_page \\ &default_next_page/2) do
+  @spec stream((integer -> map()), (map() -> map()), (integer, map() -> integer), list()) :: Enumerable.t
+  def stream(fetch_page, extract_data \\ &default_extract/1, calc_next_page \\ &default_next_page/2, opts \\ []) do
     start_fn = fn ->
-      start(fetch_page, extract_data, calc_next_page)
+      start(fetch_page, extract_data, calc_next_page, opts)
     end
 
     next_fn = fn state ->
-      next_item(fetch_page, extract_data, calc_next_page, state)
+      next_item(fetch_page, extract_data, calc_next_page, opts, state)
     end
 
     stop_fn = fn _state ->
@@ -69,35 +78,47 @@ defmodule ExTV.Streamable do
     {:ok, next}
   end
 
-  defp start(fetch_page, extract_data, calc_next_page) do
+  defp start(fetch_page, extract_data, calc_next_page, opts) do
     with {:ok, response} <- fetch_page.(1),
          {:ok, data} <- extract_data.(response),
          {:ok, next_page_number} <- calc_next_page.(1, response) do
       { data, next_page_number }
     else
-      error -> { :halt, error}
+      error ->
+        case opts[:raise] do
+          true -> raise "Streaming error: " <> inspect(error)
+          _    -> :ok
+        end
+
+        { :halt, error }
     end
   end
 
-  defp next_item(_fetch, _extract, _next, {[], nil} = state) do
+  defp next_item(_fetch, _extract, _next, _opts, {[], nil} = state) do
     {:halt, state}
   end
 
-  defp next_item(fetch_page, extract_data, calc_next_page, {[], next_page_number} = state) do
+  defp next_item(fetch_page, extract_data, calc_next_page, opts, {[], next_page_number} = state) do
     with {:ok, response} <- fetch_page.(next_page_number),
          {:ok, [head | tail]} <- extract_data.(response),
          {:ok, new_next_page_number} <- calc_next_page.(next_page_number, response) do
       {[head], { tail, new_next_page_number }}
     else
-      _ -> { :halt, state }
+      error ->
+        case opts[:raise] do
+          true -> raise "Streaming error: " <> inspect(error)
+          _    -> :ok
+        end
+
+        { :halt, state }
     end
   end
 
-  defp next_item(_fetch, _extract, _next, {[head | tail], next_page_number}) do
+  defp next_item(_fetch, _extract, _next, _opts, {[head | tail], next_page_number}) do
     {[head], {tail, next_page_number}}
   end
 
-  defp next_item(_fetch, _extract, _next, {:halt, _} = error), do: error
+  defp next_item(_fetch, _extract, _next, _opts, {:halt, _} = error), do: error
 
   defp stop() do
     :ok
