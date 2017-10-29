@@ -38,7 +38,7 @@ defmodule ExTV.Series do
   end
 
   @doc """
-  Fetches an array of episodes for the given series id
+  Fetches an enumerable of episodes for the given series id
 
   ## Parameters
 

@@ -48,16 +48,18 @@ defmodule ExTV.SeriesTest do
     test "successfully fetch a series' episodes by series ID" do
       use_cassette "episodes_success" do
         result = ExTV.Series.episodes(295685)
+                 |> Enum.into([])
 
         assert List.first(result)["episodeName"] == "Pilot"
       end
     end
 
-    test "returns nil when it fails to find that series by ID" do
+    test "returns an empty enumerable when it fails to find that series by ID" do
       use_cassette "episodes_failure" do
         result = ExTV.Series.episodes(-1)
+                 |> Enum.into([])
 
-        assert result == nil
+        assert result == []
       end
     end
   end
