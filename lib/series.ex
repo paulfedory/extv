@@ -6,6 +6,7 @@ defmodule ExTV.Series do
   """
 
   import ExTV.HTTP
+  import ExTV.Streamable
 
   @doc """
   Fetches information about a single TV series.
@@ -37,15 +38,22 @@ defmodule ExTV.Series do
   end
 
   @doc """
-  Fetches an array of episodes for the given series id
+  Fetches an enumerable of episodes for the given series id
 
   ## Parameters
 
     - id: the ID of the series on theTVDB.com
+    - raise_on_error: Raise if there is an error
+    end
   """
-  @spec episodes(number) :: map() | nil
-  def episodes(id) do
-    get!("series/#{id}/episodes").body["data"]
+  @spec episodes(number, boolean) :: Enumerable.t
+  def episodes(id, raise_on_error \\ false) do
+    fetch_page = fn page ->
+      get!("series/#{id}/episodes?page=#{page}")
+      |> handle_response()
+    end
+
+    stream(fetch_page, &default_extract/1, &default_next_page/2, [raise: raise_on_error])
   end
 
   @doc """
